@@ -15,7 +15,8 @@ class SUIServiceProvider extends ServiceProvider
     {
         // publish Semantic UI
         $this->publishes([
-            __DIR__.'/assets' => public_path('/assets/semantic-ui/css'),
+            __DIR__.'/assets/semantic-ui' => public_path('/assets/semantic-ui/css'),
+            __DIR__.'/assets/jquery' => public_path('/assets/semantic-ui/jquery'),
         ], 'public');
     }
 
