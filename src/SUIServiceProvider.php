@@ -15,7 +15,7 @@ class SUIServiceProvider extends ServiceProvider
     {
         // publish Semantic UI
         $this->publishes([
-            __DIR__.'/assets' => public_path('wangaz/laravel-semantic-ui-css'),
+            __DIR__.'/assets' => public_path('/assets/semantic-ui/css'),
         ], 'public');
     }
 
