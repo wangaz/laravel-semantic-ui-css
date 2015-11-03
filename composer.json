@@ -3,7 +3,7 @@
     "description": "Semantic UI Implementation for Laravel",
     "keywords": ["css", "laravel", "semantic ui"],
     "license": "CC-BY 4.0",
-    "version": "0.1.0",
+    "version": "0.1.3",
     "type": "laravel-package",
     "require": {
         "laravel/framework": "5.1.*"
