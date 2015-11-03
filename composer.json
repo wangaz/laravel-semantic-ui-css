@@ -8,6 +8,9 @@
     "require": {
         "laravel/framework": "5.1.*"
     },
+    "provide": {
+	    "semantic/ui-css": "2.1.5"
+    },
     "autoload": {
         "psr-4": {
             "SUI\\": "src/"
