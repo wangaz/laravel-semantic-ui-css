@@ -1,4 +1,5 @@
 # laravel Semantic UI CSS package
+This laravel package provides [Semantic-UI-CSS](https://github.com/Semantic-Org/Semantic-UI-CSS) to your laravel project.
 
 ## Requirements
 * composer (latest)
