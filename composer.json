@@ -3,13 +3,13 @@
     "description": "Semantic UI Implementation for Laravel",
     "keywords": ["css", "laravel", "semantic ui"],
     "license": "LGPL v3",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "type": "laravel-package",
     "require": {
         "laravel/framework": "5.1.*"
     },
     "provide": {
-	    "semantic/ui-css": "2.1.5"
+	    "semantic/ui-css": "2.1.7"
     },
     "autoload": {
         "psr-4": {
@@ -17,6 +17,6 @@
         }
     },
     "scripts": {
-      "post-update-cmd": "php artisan vendor:publish --provider=SUI\SUIServiceProvider --tag=public --force"
+      "post-update-cmd": "php artisan vendor:publish --provider=\"SUI\\SUIServiceProvider\" --tag=public --force"
     }
 }
