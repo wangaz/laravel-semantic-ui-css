@@ -3,7 +3,7 @@ This laravel package provides [Semantic-UI-CSS](https://github.com/Semantic-Org/
 
 ## Requirements
 * composer (latest)
-* laravel (version 5.1 or higher)
+* laravel (version 5.0 or higher) OR lumen (5.0 or higher)
 
 
 ## Installation
