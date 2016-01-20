@@ -12,8 +12,8 @@ This laravel package provides [Semantic-UI-CSS](https://github.com/Semantic-Org/
     "scripts": {
       "post-update-cmd": [
         "mkdir -p public/assets",
-        "ln -sf vendor/wangaz/laravel-semantic-ui-css/src/assets/jquery public/assets/jquery",
-        "ln -sf vendor/wangaz/laravel-semantic-ui-css/src/assets/semantic-ui public/assets/semantic-ui"
+        "ln -sf ../../vendor/wangaz/laravel-semantic-ui-css/src/assets/jquery public/assets/jquery",
+        "ln -sf ../../vendor/wangaz/laravel-semantic-ui-css/src/assets/semantic-ui public/assets/semantic-ui"
       ]
     }
 ```
