@@ -10,11 +10,6 @@ This laravel package provides [Semantic-UI-CSS](https://github.com/Semantic-Org/
 2. Add to your `composer.json`: (You may need to insert some code parts to existing code)
 ```
     "scripts": {
-      "post-install-cmd": [
-        "mkdir -p public/assets",
-        "ln -sf vendor/wangaz/laravel-semantic-ui/src/assets/jquery public/assets/jquery",
-        "ln -sf vendor/wangaz/laravel-semantic-ui/src/assets/semantic-ui public/assets/semantic-ui"
-      ],
       "post-update-cmd": [
         "mkdir -p public/assets",
         "ln -sf vendor/wangaz/laravel-semantic-ui/src/assets/jquery public/assets/jquery",
