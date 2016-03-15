@@ -2,11 +2,11 @@
     "name": "wangaz/laravel-semantic-ui-css",
     "description": "Semantic UI Implementation for Laravel",
     "keywords": ["css", "laravel", "semantic ui"],
-    "license": "GPL-3.0",
-    "version": "1.0.0",
+    "license": "MIT",
+    "version": "1.0.1",
     "type": "library",
     "provide": {
 	    "semantic/ui-css": "2.1.8",
-      "jquery/jquery": "2.2.0"
+	    "jquery/jquery": "2.2.0"
     }
 }
