@@ -1,11 +1,12 @@
 {
   "name": "semantic-ui-css",
-  "version": "2.1.8",
+  "version": "2.2.7",
   "title": "Semantic UI",
   "description": "CSS Only distribution of Semantic UI",
   "homepage": "http://www.semantic-ui.com",
   "author": "Jack Lukic <jack@semantic-ui.com>",
   "license": "MIT",
+  "main": "semantic.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/Semantic-Org/Semantic-UI-CSS.git"
