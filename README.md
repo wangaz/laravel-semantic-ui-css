@@ -20,4 +20,4 @@ This laravel package provides [Semantic-UI-CSS](https://github.com/Semantic-Org/
 Run `composer update` via CLI
 
 ## Hints
-* If you are updating your laravel app via composer, this package will also be updated. You won't have to run the **vendor:publish** command mentioned above, this will be done automatically.
+* If you are updating your laravel app via composer, this package will also be updated. You won't have to run the **vendor:publish**, this will be done automatically.
