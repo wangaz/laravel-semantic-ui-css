@@ -3,10 +3,11 @@
     "description": "Semantic UI Implementation for Laravel",
     "keywords": ["css", "laravel", "semantic ui"],
     "license": "MIT",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "type": "library",
     "provide": {
-	    "semantic/ui-css": "2.2.7",
-	    "jquery/jquery": "3.1.0"
+	    "semantic/ui-css": "2.2.13",
+	    "jquery/jquery": "3.2.1"
     }
 }
+
