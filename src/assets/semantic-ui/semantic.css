@@ -1,5 +1,5 @@
  /*
- * # Semantic UI - 2.2.7
+ * # Semantic UI - 2.2.12
  * https://github.com/Semantic-Org/Semantic-UI
  * http://www.semantic-ui.com/
  *
@@ -10,7 +10,7 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
 /*!
- * # Semantic UI 2.2.7 - Reset
+ * # Semantic UI 2.2.12 - Reset
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -46,26 +46,19 @@ input[type="password"] {
   /* mobile firefox too! */
 }
 
-/*******************************
-         Theme Overrides
-*******************************/
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* Document
+   ========================================================================== */
 
 /**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
  */
 
 html {
-  font-family: sans-serif;
+  line-height: 1.15;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -73,124 +66,33 @@ html {
   /* 2 */
 }
 
+/* Sections
+   ========================================================================== */
+
 /**
- * Remove default margin.
+ * Remove the margin in all browsers (opinionated).
  */
 
 body {
   margin: 0;
 }
 
-/* HTML5 display definitions
-   ========================================================================== */
-
 /**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
+ * Add the correct display in IE 9-.
  */
 
 article,
 aside,
-details,
-figcaption,
-figure,
 footer,
 header,
-hgroup,
-main,
 nav,
-section,
-summary {
+section {
   display: block;
 }
 
 /**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
- */
-
-[hidden],
-template {
-  display: none;
-}
-
-/* Links
-   ========================================================================== */
-
-/**
- * Remove the gray background color from active links in IE 10.
- */
-
-a {
-  background: transparent;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
- */
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari and Chrome.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
  */
 
 h1 {
@@ -198,17 +100,135 @@ h1 {
   margin: 0.67em 0;
 }
 
+/* Grouping content
+   ========================================================================== */
+
 /**
- * Address styling not present in IE 8/9.
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
  */
 
 mark {
-  background: #ff0;
+  background-color: #ff0;
   color: #000;
 }
 
 /**
- * Address inconsistent and variable font size in all browsers.
+ * Add the correct font size in all browsers.
  */
 
 small {
@@ -216,7 +236,8 @@ small {
 }
 
 /**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
  */
 
 sub,
@@ -227,85 +248,57 @@ sup {
   vertical-align: baseline;
 }
 
-sup {
-  top: -0.5em;
-}
-
 sub {
   bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
 }
 
 /* Embedded content
    ========================================================================== */
 
 /**
- * Remove border when inside `a` element in IE 8/9/10.
+ * Add the correct display in IE 9-.
  */
 
-img {
-  border: 0;
+audio,
+video {
+  display: inline-block;
 }
 
 /**
- * Correct overflow not hidden in IE 9/10/11.
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
  */
 
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-
-hr {
-  height: 0;
-}
-
-/**
- * Contain overflow in all browsers.
- */
-
-pre {
-  overflow: auto;
-}
-
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
 /* Forms
    ========================================================================== */
 
 /**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
  */
 
 button,
@@ -313,153 +306,119 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit;
+  font-family: sans-serif;
   /* 1 */
-  font: inherit;
-  /* 2 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
   margin: 0;
-  /* 3 */
+  /* 2 */
 }
 
 /**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
  */
 
-button {
+button,
+input {
+  /* 1 */
   overflow: visible;
 }
 
 /**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
- * Correct `select` style inheritance in Firefox.
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
  */
 
 button,
 select {
+  /* 1 */
   text-transform: none;
 }
 
 /**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html [type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-  cursor: pointer;
-  /* 3 */
 }
 
 /**
- * Re-set default cursor for disabled elements.
- */
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/**
- * Remove inner padding and border in Firefox 4+.
+ * Remove the inner border and padding in Firefox.
  */
 
 button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
   padding: 0;
 }
 
 /**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
+ * Restore the focus styles unset by the previous rule.
  */
 
-input {
-  line-height: normal;
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 /**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
- */
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-}
-
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * Define consistent border, margin, and padding.
+ * Correct the padding in Firefox.
  */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 /**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
  */
 
 legend {
-  border: 0;
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
   /* 1 */
   padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
   /* 2 */
 }
 
 /**
- * Remove default vertical scrollbar in IE 8/9/10/11.
+ * Remove the default vertical scrollbar in IE.
  */
 
 textarea {
@@ -467,36 +426,116 @@ textarea {
 }
 
 /**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
  */
 
-optgroup {
-  font-weight: bold;
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
-/* Tables
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
    ========================================================================== */
 
 /**
- * Remove most spacing between table cells.
+ * Add the correct display in IE 9-.
  */
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+canvas {
+  display: inline-block;
 }
 
-td,
-th {
-  padding: 0;
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
 }
 
 /*******************************
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Site
+ * # Semantic UI 2.2.12 - Site
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -541,8 +580,8 @@ h3,
 h4,
 h5 {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  line-height: 1.2857em;
-  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  line-height: 1.28571429em;
+  margin: calc(2rem -  0.14285714em ) 0em 1rem;
   font-weight: bold;
   padding: 0em;
 }
@@ -553,15 +592,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.714rem;
+  font-size: 1.71428571rem;
 }
 
 h3 {
-  font-size: 1.28rem;
+  font-size: 1.28571429rem;
 }
 
 h4 {
-  font-size: 1.071rem;
+  font-size: 1.07142857rem;
 }
 
 h5 {
@@ -616,6 +655,10 @@ a:hover {
 }
 
 /*******************************
+         Scrollbars
+*******************************/
+
+/*******************************
           Highlighting
 *******************************/
 
@@ -656,6 +699,52 @@ input::selection {
   color: rgba(0, 0, 0, 0.87);
 }
 
+/* Force Simple Scrollbars */
+
+body ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+body ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+body ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 135, 139, 0.8);
+}
+
+/* Inverted UI */
+
+body .ui.inverted::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+body .ui.inverted::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+body .ui.inverted::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+body .ui.inverted::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
 /*******************************
         Global Overrides
 *******************************/
@@ -664,7 +753,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Button
+ * # Semantic UI 2.2.12 - Button
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -1448,7 +1537,7 @@ input::selection {
 .ui.icon.buttons .button > .icon,
 .ui.icon.button > .icon {
   opacity: 0.9;
-  margin: 0em;
+  margin: 0em !important;
   vertical-align: top;
 }
 
@@ -1503,7 +1592,6 @@ input::selection {
   background: rgba(0, 0, 0, 0.05) !important;
   box-shadow: '' !important;
   color: rgba(0, 0, 0, 0.95);
-  box-shadow: rgba(34, 36, 38, 0.35);
 }
 
 .ui.basic.buttons .active.button:hover,
@@ -1522,7 +1610,7 @@ input::selection {
 }
 
 .ui.basic.buttons .active.button {
-  box-shadow: rgba(34, 36, 38, 0.35) inset;
+  box-shadow: '' !important;
 }
 
 /* Standard Basic Inverted */
@@ -4615,7 +4703,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Container
+ * # Semantic UI 2.2.12 - Container
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -4776,7 +4864,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Divider
+ * # Semantic UI 2.2.12 - Divider
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -5043,7 +5131,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Flag
+ * # Semantic UI 2.2.12 - Flag
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -5790,7 +5878,7 @@ i.flag.mali:before {
 i.flag.mm:before,
 i.flag.myanmar:before,
 i.flag.burma:before {
-  background-position: -36px -1717px;
+  background-position: -73px -1821px;
 }
 
 i.flag.mn:before,
@@ -6314,7 +6402,7 @@ i.flag.zimbabwe:before {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Header
+ * # Semantic UI 2.2.12 - Header
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -6331,17 +6419,17 @@ i.flag.zimbabwe:before {
 
 .ui.header {
   border: none;
-  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  margin: calc(2rem -  0.14285714em ) 0em 1rem;
   padding: 0em 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  line-height: 1.2857em;
+  line-height: 1.28571429em;
   text-transform: none;
   color: rgba(0, 0, 0, 0.87);
 }
 
 .ui.header:first-child {
-  margin-top: -0.14285em;
+  margin-top: -0.14285714em;
 }
 
 .ui.header:last-child {
@@ -6370,7 +6458,7 @@ i.flag.zimbabwe:before {
   display: table-cell;
   opacity: 1;
   font-size: 1.5em;
-  padding-top: 0.14285em;
+  padding-top: 0em;
   vertical-align: middle;
 }
 
@@ -6386,16 +6474,16 @@ i.flag.zimbabwe:before {
         Image
 --------------------*/
 
-.ui.header > .image,
+.ui.header > .image:not(.icon),
 .ui.header > img {
   display: inline-block;
-  margin-top: 0.14285em;
+  margin-top: 0.14285714em;
   width: 2.5em;
   height: auto;
   vertical-align: middle;
 }
 
-.ui.header > .image:only-child,
+.ui.header > .image:not(.icon):only-child,
 .ui.header > img:only-child {
   margin-right: 0.75rem;
 }
@@ -6454,15 +6542,15 @@ h1.ui.header {
 }
 
 h2.ui.header {
-  font-size: 1.714rem;
+  font-size: 1.71428571rem;
 }
 
 h3.ui.header {
-  font-size: 1.28rem;
+  font-size: 1.28571429rem;
 }
 
 h4.ui.header {
-  font-size: 1.071rem;
+  font-size: 1.07142857rem;
 }
 
 h5.ui.header {
@@ -6501,15 +6589,15 @@ h5.ui.header .sub.header {
 }
 
 .ui.large.header {
-  font-size: 1.714em;
+  font-size: 1.71428571em;
 }
 
 .ui.medium.header {
-  font-size: 1.28em;
+  font-size: 1.28571429em;
 }
 
 .ui.small.header {
-  font-size: 1.071em;
+  font-size: 1.07142857em;
 }
 
 .ui.tiny.header {
@@ -7124,7 +7212,7 @@ a.ui.inverted.grey.header:hover {
 --------------------*/
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 1.28em;
+  font-size: 1.28571429em;
 }
 
 /*******************************
@@ -7135,7 +7223,7 @@ a.ui.inverted.grey.header:hover {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Icon
+ * # Semantic UI 2.2.12 - Icon
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -7665,12 +7753,40 @@ i.icons .corner.icon {
   text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
 }
 
+i.icons .top.right.corner.icon {
+  top: 0;
+  left: auto;
+  right: 0;
+  bottom: auto;
+}
+
+i.icons .top.left.corner.icon {
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+}
+
+i.icons .bottom.left.corner.icon {
+  top: auto;
+  left: 0;
+  right: auto;
+  bottom: 0;
+}
+
+i.icons .bottom.right.corner.icon {
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: 0;
+}
+
 i.icons .inverted.corner.icon {
   text-shadow: -1px -1px 0 #1B1C1D, 1px -1px 0 #1B1C1D, -1px 1px 0 #1B1C1D, 1px 1px 0 #1B1C1D;
 }
 
 /*
- * Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ * Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  * License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 
@@ -7883,10 +7999,6 @@ i.icon.find:before {
   content: "\f1e5";
 }
 
-i.icon.wifi:before {
-  content: "\f1eb";
-}
-
 i.icon.alarm.mute:before {
   content: "\f1f6";
 }
@@ -7989,6 +8101,70 @@ i.icon.hashtag:before {
 
 i.icon.percent:before {
   content: "\f295";
+}
+
+i.icon.handshake:before {
+  content: "\f2b5";
+}
+
+i.icon.open.envelope:before {
+  content: "\f2b6";
+}
+
+i.icon.open.envelope.outline:before {
+  content: "\f2b7";
+}
+
+i.icon.address.book:before {
+  content: "\f2b9";
+}
+
+i.icon.address.book.outline:before {
+  content: "\f2ba";
+}
+
+i.icon.address.card:before {
+  content: "\f2bb";
+}
+
+i.icon.address.card.outline:before {
+  content: "\f2bc";
+}
+
+i.icon.id.badge:before {
+  content: "\f2c1";
+}
+
+i.icon.id.card:before {
+  content: "\f2c2";
+}
+
+i.icon.id.card.outline:before {
+  content: "\f2c3";
+}
+
+i.icon.podcast:before {
+  content: "\f2ce";
+}
+
+i.icon.window.maximize:before {
+  content: "\f2d0";
+}
+
+i.icon.window.minimize:before {
+  content: "\f2d1";
+}
+
+i.icon.window.restore:before {
+  content: "\f2d2";
+}
+
+i.icon.window.close:before {
+  content: "\f2d3";
+}
+
+i.icon.window.close.outline:before {
+  content: "\f2d4";
 }
 
 /* User Actions */
@@ -8295,6 +8471,18 @@ i.icon.child:before {
 
 i.icon.spy:before {
   content: "\f21b";
+}
+
+i.icon.user.circle:before {
+  content: "\f2bd";
+}
+
+i.icon.user.circle.outline:before {
+  content: "\f2be";
+}
+
+i.icon.user.outline:before {
+  content: "\f2c0";
 }
 
 /* Gender & Sexuality */
@@ -8623,6 +8811,38 @@ i.icon.hand.spock:before {
 
 i.icon.tv:before {
   content: "\f26c";
+}
+
+i.icon.thermometer.full:before {
+  content: "\f2c7";
+}
+
+i.icon.thermometer.three.quarters:before {
+  content: "\f2c8";
+}
+
+i.icon.thermometer.half:before {
+  content: "\f2c9";
+}
+
+i.icon.thermometer.quarter:before {
+  content: "\f2ca";
+}
+
+i.icon.thermometer.empty:before {
+  content: "\f2cb";
+}
+
+i.icon.shower:before {
+  content: "\f2cc";
+}
+
+i.icon.bathtub:before {
+  content: "\f2cd";
+}
+
+i.icon.snowflake:before {
+  content: "\f2dc";
 }
 
 /* Shapes */
@@ -9173,6 +9393,10 @@ i.icon.database:before {
   content: "\f1c0";
 }
 
+i.icon.wifi:before {
+  content: "\f1eb";
+}
+
 i.icon.server:before {
   content: "\f233";
 }
@@ -9187,6 +9411,10 @@ i.icon.bluetooth:before {
 
 i.icon.bluetooth.alternative:before {
   content: "\f294";
+}
+
+i.icon.microchip:before {
+  content: "\f2db";
 }
 
 /* Rating */
@@ -10301,6 +10529,58 @@ i.icon.font.awesome:before {
   content: "\f2b4";
 }
 
+i.icon.linode:before {
+  content: "\f2b8";
+}
+
+i.icon.quora:before {
+  content: "\f2c4";
+}
+
+i.icon.free.code.camp:before {
+  content: "\f2c5";
+}
+
+i.icon.telegram:before {
+  content: "\f2c6";
+}
+
+i.icon.bandcamp:before {
+  content: "\f2d5";
+}
+
+i.icon.grav:before {
+  content: "\f2d6";
+}
+
+i.icon.etsy:before {
+  content: "\f2d7";
+}
+
+i.icon.imdb:before {
+  content: "\f2d8";
+}
+
+i.icon.ravelry:before {
+  content: "\f2d9";
+}
+
+i.icon.eercast:before {
+  content: "\f2da";
+}
+
+i.icon.superpowers:before {
+  content: "\f2dd";
+}
+
+i.icon.wpexplorer:before {
+  content: "\f2de";
+}
+
+i.icon.meetup:before {
+  content: "\f2e0";
+}
+
 /*******************************
             Aliases
 *******************************/
@@ -11181,11 +11461,47 @@ i.icon.fa:before {
   content: "\f2b4";
 }
 
+i.icon.vcard:before {
+  content: "\f2bb";
+}
+
+i.icon.vcard.outline:before {
+  content: "\f2bc";
+}
+
+i.icon.drivers.license:before {
+  content: "\f2c2";
+}
+
+i.icon.drivers.license.outline:before {
+  content: "\f2c3";
+}
+
+i.icon.thermometer:before {
+  content: "\f2c7";
+}
+
+i.icon.s15:before {
+  content: "\f2cd";
+}
+
+i.icon.bath:before {
+  content: "\f2cd";
+}
+
+i.icon.times.rectangle:before {
+  content: "\f2d3";
+}
+
+i.icon.times.rectangle.outline:before {
+  content: "\f2d4";
+}
+
 /*******************************
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Image
+ * # Semantic UI 2.2.12 - Image
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -11502,7 +11818,7 @@ img.ui.bordered.image {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Input
+ * # Semantic UI 2.2.12 - Input
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -11538,9 +11854,9 @@ img.ui.bordered.image {
   outline: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   text-align: left;
-  line-height: 1.2142em;
+  line-height: 1.21428571em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  padding: 0.67861429em 1em;
+  padding: 0.67857143em 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
   color: rgba(0, 0, 0, 0.87);
@@ -11577,12 +11893,12 @@ img.ui.bordered.image {
 ---------------------*/
 
 .ui.disabled.input,
-.ui.input input[disabled] {
+.ui.input:not(.disabled) input[disabled] {
   opacity: 0.45;
 }
 
 .ui.disabled.input input,
-.ui.input input[disabled] {
+.ui.input:not(.disabled) input[disabled] {
   pointer-events: none;
 }
 
@@ -11712,6 +12028,7 @@ img.ui.bordered.image {
   background-color: transparent !important;
   padding: 0em !important;
   box-shadow: none !important;
+  border-radius: 0px !important;
 }
 
 /* Transparent Icon */
@@ -12065,7 +12382,7 @@ img.ui.bordered.image {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Label
+ * # Semantic UI 2.2.12 - Label
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -13490,7 +13807,7 @@ a.ui.basic.label:hover {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - List
+ * # Semantic UI 2.2.12 - List
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -13593,7 +13910,7 @@ ol.ui.list ol li,
 .ui.list > .item > i.icon {
   display: table-cell;
   margin: 0em;
-  padding-top: 0.07142857em;
+  padding-top: 0em;
   padding-right: 0.28571429em;
   vertical-align: top;
   -webkit-transition: color 0.1s ease;
@@ -14567,7 +14884,7 @@ ol.ui.horizontal.list li:before,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Loader
+ * # Semantic UI 2.2.12 - Loader
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -14945,7 +15262,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Rail
+ * # Semantic UI 2.2.12 - Rail
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -15107,7 +15424,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Reveal
+ * # Semantic UI 2.2.12 - Reveal
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -15412,7 +15729,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Segment
+ * # Semantic UI 2.2.12 - Segment
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -15649,6 +15966,14 @@ ol.ui.horizontal.list li:before,
 
 .ui[class*="very padded"].segment {
   padding: 3em;
+}
+
+/* Padded vertical */
+
+.ui.padded.segment.vertical.segment,
+.ui[class*="very padded"].vertical.segment {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /*-------------------
@@ -15951,7 +16276,7 @@ ol.ui.horizontal.list li:before,
 /* Red */
 
 .ui.red.segment:not(.inverted) {
-  border-top: 2px solid #DB2828;
+  border-top: 2px solid #DB2828 !important;
 }
 
 .ui.inverted.red.segment {
@@ -15962,7 +16287,7 @@ ol.ui.horizontal.list li:before,
 /* Orange */
 
 .ui.orange.segment:not(.inverted) {
-  border-top: 2px solid #F2711C;
+  border-top: 2px solid #F2711C !important;
 }
 
 .ui.inverted.orange.segment {
@@ -15973,7 +16298,7 @@ ol.ui.horizontal.list li:before,
 /* Yellow */
 
 .ui.yellow.segment:not(.inverted) {
-  border-top: 2px solid #FBBD08;
+  border-top: 2px solid #FBBD08 !important;
 }
 
 .ui.inverted.yellow.segment {
@@ -15984,7 +16309,7 @@ ol.ui.horizontal.list li:before,
 /* Olive */
 
 .ui.olive.segment:not(.inverted) {
-  border-top: 2px solid #B5CC18;
+  border-top: 2px solid #B5CC18 !important;
 }
 
 .ui.inverted.olive.segment {
@@ -15995,7 +16320,7 @@ ol.ui.horizontal.list li:before,
 /* Green */
 
 .ui.green.segment:not(.inverted) {
-  border-top: 2px solid #21BA45;
+  border-top: 2px solid #21BA45 !important;
 }
 
 .ui.inverted.green.segment {
@@ -16006,7 +16331,7 @@ ol.ui.horizontal.list li:before,
 /* Teal */
 
 .ui.teal.segment:not(.inverted) {
-  border-top: 2px solid #00B5AD;
+  border-top: 2px solid #00B5AD !important;
 }
 
 .ui.inverted.teal.segment {
@@ -16017,7 +16342,7 @@ ol.ui.horizontal.list li:before,
 /* Blue */
 
 .ui.blue.segment:not(.inverted) {
-  border-top: 2px solid #2185D0;
+  border-top: 2px solid #2185D0 !important;
 }
 
 .ui.inverted.blue.segment {
@@ -16028,7 +16353,7 @@ ol.ui.horizontal.list li:before,
 /* Violet */
 
 .ui.violet.segment:not(.inverted) {
-  border-top: 2px solid #6435C9;
+  border-top: 2px solid #6435C9 !important;
 }
 
 .ui.inverted.violet.segment {
@@ -16039,7 +16364,7 @@ ol.ui.horizontal.list li:before,
 /* Purple */
 
 .ui.purple.segment:not(.inverted) {
-  border-top: 2px solid #A333C8;
+  border-top: 2px solid #A333C8 !important;
 }
 
 .ui.inverted.purple.segment {
@@ -16050,7 +16375,7 @@ ol.ui.horizontal.list li:before,
 /* Pink */
 
 .ui.pink.segment:not(.inverted) {
-  border-top: 2px solid #E03997;
+  border-top: 2px solid #E03997 !important;
 }
 
 .ui.inverted.pink.segment {
@@ -16061,7 +16386,7 @@ ol.ui.horizontal.list li:before,
 /* Brown */
 
 .ui.brown.segment:not(.inverted) {
-  border-top: 2px solid #A5673F;
+  border-top: 2px solid #A5673F !important;
 }
 
 .ui.inverted.brown.segment {
@@ -16072,7 +16397,7 @@ ol.ui.horizontal.list li:before,
 /* Grey */
 
 .ui.grey.segment:not(.inverted) {
-  border-top: 2px solid #767676;
+  border-top: 2px solid #767676 !important;
 }
 
 .ui.inverted.grey.segment {
@@ -16083,7 +16408,7 @@ ol.ui.horizontal.list li:before,
 /* Black */
 
 .ui.black.segment:not(.inverted) {
-  border-top: 2px solid #1B1C1D;
+  border-top: 2px solid #1B1C1D !important;
 }
 
 .ui.inverted.black.segment {
@@ -16285,7 +16610,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Step
+ * # Semantic UI 2.2.12 - Step
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -16590,7 +16915,7 @@ ol.ui.horizontal.list li:before,
 /* Mobile (Default) */
 
 @media only screen and (max-width: 767px) {
-  .ui.steps {
+  .ui.steps:not(.unstackable) {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -16601,7 +16926,7 @@ ol.ui.horizontal.list li:before,
     flex-direction: column;
   }
 
-  .ui.steps .step {
+  .ui.steps:not(.unstackable) .step {
     width: 100% !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -16611,31 +16936,31 @@ ol.ui.horizontal.list li:before,
     padding: 1.14285714em 2em;
   }
 
-  .ui.steps .step:first-child {
+  .ui.steps:not(.unstackable) .step:first-child {
     padding: 1.14285714em 2em;
     border-radius: 0.28571429rem 0.28571429rem 0em 0em;
   }
 
-  .ui.steps .step:last-child {
+  .ui.steps:not(.unstackable) .step:last-child {
     border-radius: 0em 0em 0.28571429rem 0.28571429rem;
   }
 
   /* Arrow */
 
-  .ui.steps .step:after {
+  .ui.steps:not(.unstackable) .step:after {
     display: none !important;
   }
 
   /* Content */
 
-  .ui.steps .step .content {
+  .ui.steps:not(.unstackable) .step .content {
     text-align: center;
   }
 
   /* Icon */
 
-  .ui.steps .step > .icon,
-  .ui.ordered.steps .step:before {
+  .ui.steps:not(.unstackable) .step > .icon,
+  .ui.ordered.steps:not(.unstackable) .step:before {
     margin: 0em 0em 1rem 0em;
   }
 }
@@ -16972,7 +17297,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Breadcrumb
+ * # Semantic UI 2.2.12 - Breadcrumb
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -17103,7 +17428,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Form
+ * # Semantic UI 2.2.12 - Form
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -17190,7 +17515,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.form ::-webkit-datetime-edit,
 .ui.form ::-webkit-inner-spin-button {
-  height: 1.2142em;
+  height: 1.21428571em;
 }
 
 .ui.form input:not([type]),
@@ -17210,8 +17535,8 @@ ol.ui.horizontal.list li:before,
   outline: none;
   -webkit-appearance: none;
   tap-highlight-color: rgba(255, 255, 255, 0);
-  line-height: 1.2142em;
-  padding: 0.67861429em 1em;
+  line-height: 1.21428571em;
+  padding: 0.67857143em 1em;
   font-size: 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -18000,26 +18325,26 @@ ol.ui.horizontal.list li:before,
     flex-wrap: wrap;
   }
 
-  .ui[class*="equal width"].form .fields > .field,
-  .ui.form [class*="equal width"].fields > .field,
-  .ui.form .two.fields > .fields,
-  .ui.form .two.fields > .field,
-  .ui.form .three.fields > .fields,
-  .ui.form .three.fields > .field,
-  .ui.form .four.fields > .fields,
-  .ui.form .four.fields > .field,
-  .ui.form .five.fields > .fields,
-  .ui.form .five.fields > .field,
-  .ui.form .six.fields > .fields,
-  .ui.form .six.fields > .field,
-  .ui.form .seven.fields > .fields,
-  .ui.form .seven.fields > .field,
-  .ui.form .eight.fields > .fields,
-  .ui.form .eight.fields > .field,
-  .ui.form .nine.fields > .fields,
-  .ui.form .nine.fields > .field,
-  .ui.form .ten.fields > .fields,
-  .ui.form .ten.fields > .field {
+  .ui[class*="equal width"].form:not(.unstackable) .fields > .field,
+  .ui.form:not(.unstackable) [class*="equal width"].fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .three.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .three.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .four.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .four.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .five.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .five.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .six.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .six.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .seven.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .seven.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .eight.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .eight.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .nine.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .nine.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .ten.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .ten.fields:not(.unstackable) > .field {
     width: 100% !important;
     margin: 0em 0em 1em;
   }
@@ -18100,29 +18425,29 @@ ol.ui.horizontal.list li:before,
 /* Swap to full width on mobile */
 
 @media only screen and (max-width: 767px) {
-  .ui.form .two.fields > .fields,
-  .ui.form .two.fields > .field,
-  .ui.form .three.fields > .fields,
-  .ui.form .three.fields > .field,
-  .ui.form .four.fields > .fields,
-  .ui.form .four.fields > .field,
-  .ui.form .five.fields > .fields,
-  .ui.form .five.fields > .field,
-  .ui.form .fields > .two.wide.field,
-  .ui.form .fields > .three.wide.field,
-  .ui.form .fields > .four.wide.field,
-  .ui.form .fields > .five.wide.field,
-  .ui.form .fields > .six.wide.field,
-  .ui.form .fields > .seven.wide.field,
-  .ui.form .fields > .eight.wide.field,
-  .ui.form .fields > .nine.wide.field,
-  .ui.form .fields > .ten.wide.field,
-  .ui.form .fields > .eleven.wide.field,
-  .ui.form .fields > .twelve.wide.field,
-  .ui.form .fields > .thirteen.wide.field,
-  .ui.form .fields > .fourteen.wide.field,
-  .ui.form .fields > .fifteen.wide.field,
-  .ui.form .fields > .sixteen.wide.field {
+  .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .three.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .three.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .four.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .four.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .five.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .five.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .two.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .three.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .four.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .five.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .six.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .seven.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .eight.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .nine.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .ten.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .eleven.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .twelve.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .thirteen.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .fourteen.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .fifteen.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .sixteen.wide.field {
     width: 100% !important;
   }
 
@@ -18269,7 +18594,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Grid
+ * # Semantic UI 2.2.12 - Grid
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -20770,7 +21095,6 @@ ol.ui.horizontal.list li:before,
 /* Menu */
 
 .ui.menu .dropdown.item .menu {
-  left: 0px;
   min-width: calc(100% - 1px);
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
   background: #FFFFFF;
@@ -21935,6 +22259,14 @@ Floated Menu / Item
   .ui.stackable.menu .right.item {
     margin-left: 0 !important;
   }
+
+  .ui.stackable.menu .right.menu,
+  .ui.stackable.menu .left.menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 /*--------------
@@ -22417,6 +22749,10 @@ Floated Menu / Item
   justify-content: center;
 }
 
+.ui.attached.item.menu {
+  margin: 0em -1px !important;
+}
+
 .ui.item.menu .item:last-child:before {
   display: none;
 }
@@ -22784,7 +23120,7 @@ Floated Menu / Item
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Message
+ * # Semantic UI 2.2.12 - Message
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -22829,7 +23165,7 @@ Floated Menu / Item
   display: block;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin: -0.14285em 0em 0rem 0em;
+  margin: -0.14285714em 0em 0rem 0em;
 }
 
 /* Default font size */
@@ -22971,6 +23307,12 @@ Floated Menu / Item
 
 .ui.compact.message {
   display: inline-block;
+}
+
+.ui.compact.icon.message {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 /*--------------
@@ -23325,7 +23667,7 @@ Floated Menu / Item
         Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Table
+ * # Semantic UI 2.2.12 - Table
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -24408,7 +24750,7 @@ Floated Menu / Item
 .ui.inverted.table th {
   background-color: rgba(0, 0, 0, 0.15);
   border-color: rgba(255, 255, 255, 0.1) !important;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .ui.inverted.table tr td {
@@ -24589,7 +24931,7 @@ Floated Menu / Item
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Ad
+ * # Semantic UI 2.2.12 - Ad
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -24878,7 +25220,7 @@ Floated Menu / Item
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Item
+ * # Semantic UI 2.2.12 - Item
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -25068,7 +25410,7 @@ Floated Menu / Item
   font-weight: bold;
   font-size: 1.28571429em;
   margin-top: -0.21425em;
-  line-height: 1.2857em;
+  line-height: 1.28571429em;
 }
 
 .ui.cards > .card > .content > .meta + .description,
@@ -25716,7 +26058,7 @@ a.ui.card:hover,
     margin-right: 0em;
   }
 
-  .ui.two.doubling.cards .card {
+  .ui.two.doubling.cards > .card {
     width: 100%;
     margin-left: 0em;
     margin-right: 0em;
@@ -25727,7 +26069,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.three.doubling.cards .card {
+  .ui.three.doubling.cards > .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25738,7 +26080,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.four.doubling.cards .card {
+  .ui.four.doubling.cards > .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25749,7 +26091,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.five.doubling.cards .card {
+  .ui.five.doubling.cards > .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25760,7 +26102,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.six.doubling.cards .card {
+  .ui.six.doubling.cards > .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25771,7 +26113,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.seven.doubling.cards .card {
+  .ui.seven.doubling.cards > .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25782,7 +26124,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.eight.doubling.cards .card {
+  .ui.eight.doubling.cards > .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25793,7 +26135,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.nine.doubling.cards .card {
+  .ui.nine.doubling.cards > .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25804,7 +26146,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.ten.doubling.cards .card {
+  .ui.ten.doubling.cards > .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25819,7 +26161,7 @@ a.ui.card:hover,
     margin-right: 0em;
   }
 
-  .ui.two.doubling.cards .card {
+  .ui.two.doubling.cards > .card {
     width: 100%;
     margin-left: 0em;
     margin-right: 0em;
@@ -25830,7 +26172,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.three.doubling.cards .card {
+  .ui.three.doubling.cards > .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25841,7 +26183,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.four.doubling.cards .card {
+  .ui.four.doubling.cards > .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25852,7 +26194,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.five.doubling.cards .card {
+  .ui.five.doubling.cards > .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25863,7 +26205,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.six.doubling.cards .card {
+  .ui.six.doubling.cards > .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25874,7 +26216,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.eight.doubling.cards .card {
+  .ui.eight.doubling.cards > .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25885,7 +26227,7 @@ a.ui.card:hover,
     margin-right: -0.75em;
   }
 
-  .ui.eight.doubling.cards .card {
+  .ui.eight.doubling.cards > .card {
     width: calc( 25%  -  1.5em );
     margin-left: 0.75em;
     margin-right: 0.75em;
@@ -25896,7 +26238,7 @@ a.ui.card:hover,
     margin-right: -0.75em;
   }
 
-  .ui.nine.doubling.cards .card {
+  .ui.nine.doubling.cards > .card {
     width: calc( 25%  -  1.5em );
     margin-left: 0.75em;
     margin-right: 0.75em;
@@ -25907,7 +26249,7 @@ a.ui.card:hover,
     margin-right: -0.75em;
   }
 
-  .ui.ten.doubling.cards .card {
+  .ui.ten.doubling.cards > .card {
     width: calc( 20%  -  1.5em );
     margin-left: 0.75em;
     margin-right: 0.75em;
@@ -25952,7 +26294,7 @@ a.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Comment
+ * # Semantic UI 2.2.12 - Comment
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -26206,15 +26548,15 @@ a.ui.card:hover,
 }
 
 .ui.small.comments {
-  font-size: 0.9em;
+  font-size: 0.92857143rem;
 }
 
 .ui.comments {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .ui.large.comments {
-  font-size: 1.1em;
+  font-size: 1.14285714rem;
 }
 
 .ui.big.comments {
@@ -26222,7 +26564,7 @@ a.ui.card:hover,
 }
 
 .ui.huge.comments {
-  font-size: 1.2em;
+  font-size: 1.42857143rem;
 }
 
 .ui.massive.comments {
@@ -26237,7 +26579,7 @@ a.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Feed
+ * # Semantic UI 2.2.12 - Feed
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -26551,7 +26893,7 @@ a.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Item
+ * # Semantic UI 2.2.12 - Item
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -26934,7 +27276,7 @@ a.ui.card:hover,
 /* Mobile Only */
 
 @media only screen and (max-width: 767px) {
-  .ui.items > .item {
+  .ui.items:not(.unstackable) > .item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -26942,20 +27284,20 @@ a.ui.card:hover,
     margin: 2em 0em;
   }
 
-  .ui.items > .item > .image {
+  .ui.items:not(.unstackable) > .item > .image {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .ui.items > .item > .image,
-  .ui.items > .item > .image > img {
+  .ui.items:not(.unstackable) > .item > .image,
+  .ui.items:not(.unstackable) > .item > .image > img {
     max-width: 100% !important;
     width: auto !important;
     max-height: 250px !important;
   }
 
-  .ui.items > .item > .image + .content {
+  .ui.items:not(.unstackable) > .item > .image + .content {
     display: block;
     padding: 1.5em 0em 0em;
   }
@@ -27052,6 +27394,17 @@ a.ui.card:hover,
   font-size: 1em;
 }
 
+/*---------------
+   Unstackable
+----------------*/
+
+@media only screen and (max-width: 767px) {
+  .ui.unstackable.items > .item > .image,
+  .ui.unstackable.items > .item > .image > img {
+    width: 125px !important;
+  }
+}
+
 /*******************************
          Theme Overrides
 *******************************/
@@ -27060,7 +27413,7 @@ a.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Statistic
+ * # Semantic UI 2.2.12 - Statistic
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -27696,7 +28049,7 @@ a.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Accordion
+ * # Semantic UI 2.2.12 - Accordion
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -27958,7 +28311,7 @@ a.ui.card:hover,
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Checkbox
+ * # Semantic UI 2.2.12 - Checkbox
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -28626,7 +28979,7 @@ a.ui.card:hover,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Dimmer
+ * # Semantic UI 2.2.12 - Dimmer
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -28639,7 +28992,7 @@ a.ui.card:hover,
             Dimmer
 *******************************/
 
-.dimmable:not(.body) {
+.dimmable:not(body) {
   position: relative;
 }
 
@@ -28691,6 +29044,24 @@ a.ui.card:hover,
 
 .ui.segment > .ui.dimmer {
   border-radius: inherit !important;
+}
+
+/* Scrollbars */
+
+.ui.dimmer:not(.inverted)::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
 }
 
 /*******************************
@@ -28834,7 +29205,7 @@ body.dimmable > .dimmer {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Dropdown
+ * # Semantic UI 2.2.12 - Dropdown
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -29058,8 +29429,8 @@ body.dimmable > .dimmer {
 
 .ui.dropdown .menu .menu {
   top: 0% !important;
-  left: 100% !important;
-  right: auto !important;
+  left: 100%;
+  right: auto;
   margin: 0em 0em 0em -0.5em !important;
   border-radius: 0.28571429rem !important;
   z-index: 21 !important;
@@ -29117,8 +29488,10 @@ body.dimmable > .dimmer {
 .ui.dropdown .menu > .item > .image,
 .ui.dropdown .menu > .item > img {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: auto;
+  margin-top: -0.5em;
+  margin-bottom: -0.5em;
   max-height: 2em;
 }
 
@@ -29195,7 +29568,7 @@ body.dimmable > .dimmer {
   -webkit-transform: rotateZ(0deg);
   transform: rotateZ(0deg);
   min-width: 14em;
-  min-height: 2.7142em;
+  min-height: 2.71428571em;
   background: #FFFFFF;
   display: inline-block;
   padding: 0.78571429em 2.1em 0.78571429em 1em;
@@ -29226,12 +29599,12 @@ select.ui.dropdown {
   position: absolute;
   width: auto;
   height: auto;
-  line-height: 1.2142em;
+  line-height: 1.21428571em;
   top: 0.78571429em;
   right: 1em;
   z-index: 3;
   margin: -0.78571429em;
-  padding: 0.78571429em;
+  padding: 0.91666667em;
   opacity: 0.8;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
@@ -29434,15 +29807,15 @@ select.ui.dropdown {
 /* Search Selection */
 
 .ui.search.selection.dropdown > input.search {
-  line-height: 1.2142em;
-  padding: 0.67861429em 2.1em 0.67861429em 1em;
+  line-height: 1.21428571em;
+  padding: 0.67857143em 2.1em 0.67857143em 1em;
 }
 
 /* Used to size multi select input to character width */
 
 .ui.search.selection.dropdown > span.sizer {
-  line-height: 1.2142em;
-  padding: 0.67861429em 2.1em 0.67861429em 1em;
+  line-height: 1.21428571em;
+  padding: 0.67857143em 2.1em 0.67857143em 1em;
   display: none;
   white-space: pre;
 }
@@ -29511,7 +29884,7 @@ select.ui.dropdown {
 /* Multiple Selection */
 
 .ui.multiple.dropdown {
-  padding: 0.22620476em 2.1em 0.22620476em 0.35714286em;
+  padding: 0.22619048em 2.1em 0.22619048em 0.35714286em;
 }
 
 .ui.multiple.dropdown .menu {
@@ -29554,7 +29927,7 @@ select.ui.dropdown {
   position: static;
   padding: 0;
   max-width: 100%;
-  margin: 0.45240952em 0em 0.45240952em 0.64285714em;
+  margin: 0.45238095em 0em 0.45238095em 0.64285714em;
   line-height: 1.21428571em;
 }
 
@@ -29578,7 +29951,7 @@ select.ui.dropdown {
   top: 0;
   left: 0;
   padding: inherit;
-  margin: 0.45240952em 0em 0.45240952em 0.64285714em;
+  margin: 0.45238095em 0em 0.45238095em 0.64285714em;
   line-height: 1.21428571em;
 }
 
@@ -29592,7 +29965,7 @@ select.ui.dropdown {
   position: static;
   padding: 0;
   max-width: 100%;
-  margin: 0.45240952em 0em 0.45240952em 0.64285714em;
+  margin: 0.45238095em 0em 0.45238095em 0.64285714em;
   width: 2.2em;
   line-height: 1.21428571em;
 }
@@ -29658,7 +30031,10 @@ select.ui.dropdown {
 
 .ui.loading.dropdown > i.icon {
   height: 1em !important;
-  padding: 1.14285714em 1.07142857em !important;
+}
+
+.ui.loading.selection.dropdown > i.icon {
+  padding: 1.5em 1.28571429em !important;
 }
 
 .ui.loading.dropdown > i.icon:before {
@@ -29732,8 +30108,8 @@ select.ui.dropdown {
   color: rgba(191, 191, 191, 0.87);
 }
 
-.ui.dropdown:not(.button) > input:focus + .default.text,
-.ui.default.dropdown:not(.button) > input:focus + .text {
+.ui.dropdown:not(.button) > input:focus ~ .default.text,
+.ui.default.dropdown:not(.button) > input:focus ~ .text {
   color: rgba(115, 115, 115, 0.87);
 }
 
@@ -29752,6 +30128,16 @@ select.ui.dropdown {
   display: block;
   visibility: hidden;
   z-index: -1;
+}
+
+.ui.dropdown > .loading.menu {
+  left: 0px !important;
+  right: auto !important;
+}
+
+.ui.dropdown > .menu .loading.menu {
+  left: 100% !important;
+  right: auto !important;
 }
 
 /*--------------------
@@ -29860,12 +30246,18 @@ select.ui.dropdown {
   border-radius: 0.28571429rem !important;
 }
 
-/* Left Flyout Menu */
+/* Leftward Opening Menu */
+
+.ui.dropdown > .left.menu {
+  left: auto !important;
+  right: 0px !important;
+}
 
 .ui.dropdown > .left.menu .menu,
 .ui.dropdown .menu .left.menu {
-  left: auto !important;
-  right: 100% !important;
+  left: auto;
+  right: 100%;
+  margin: 0em -0.5em 0em 0em !important;
   border-radius: 0.28571429rem !important;
 }
 
@@ -29873,19 +30265,20 @@ select.ui.dropdown {
 .ui.dropdown .left.menu .item .dropdown.icon {
   width: auto;
   float: left;
-  margin: 0em 0.78571429rem 0em 0em;
+  margin: 0em 0em 0em 0em;
 }
 
 .ui.dropdown .item .left.dropdown.icon,
 .ui.dropdown .left.menu .item .dropdown.icon {
   width: auto;
   float: left;
-  margin: 0em 0.78571429rem 0em 0em;
+  margin: 0em 0em 0em 0em;
 }
 
 .ui.dropdown .item .left.dropdown.icon + .text,
 .ui.dropdown .left.menu .item .dropdown.icon + .text {
   margin-left: 1em;
+  margin-right: 0em;
 }
 
 /*--------------
@@ -29991,7 +30384,6 @@ select.ui.dropdown {
 .ui.scrolling.dropdown .menu .item.item.item,
 .ui.dropdown .scrolling.menu > .item.item.item {
   border-top: none;
-  padding-right: calc( 1.14285714rem  +  17px ) !important;
 }
 
 .ui.scrolling.dropdown .menu .item:first-child,
@@ -30152,7 +30544,7 @@ select.ui.dropdown {
   transform: rotate(45deg);
   width: 0.5em;
   height: 0.5em;
-  box-shadow: -1px -1px 0px 1px rgba(34, 36, 38, 0.15);
+  box-shadow: -1px -1px 0px 0px rgba(34, 36, 38, 0.15);
   background: #FFFFFF;
   z-index: 2;
 }
@@ -30190,7 +30582,7 @@ select.ui.dropdown {
   transform: rotate(45deg);
 }
 
-/* Top Right  Pointing */
+/* Top Right Pointing */
 
 .ui.top.right.pointing.dropdown > .menu {
   top: 100%;
@@ -30200,10 +30592,11 @@ select.ui.dropdown {
   margin: 1em 0em 0em;
 }
 
+.ui.top.pointing.dropdown > .left.menu:after,
 .ui.top.right.pointing.dropdown > .menu:after {
   top: -0.25em;
-  left: auto;
-  right: 1em;
+  left: auto !important;
+  right: 1em !important;
   margin: 0em;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -30224,6 +30617,21 @@ select.ui.dropdown {
   margin: 0em 0em 0em 0em;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.ui.left:not(.top):not(.bottom).pointing.dropdown > .left.menu {
+  left: auto !important;
+  right: 100% !important;
+  margin: 0em 1em 0em 0em;
+}
+
+.ui.left:not(.top):not(.bottom).pointing.dropdown > .left.menu:after {
+  top: 1em;
+  left: auto;
+  right: -0.25em;
+  margin: 0em 0em 0em 0em;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 /* Right Pointing */
@@ -30296,20 +30704,50 @@ select.ui.dropdown {
 
 /* Upward pointing */
 
-.ui.upward.pointing.dropdown > .menu,
-.ui.upward.top.pointing.dropdown > .menu {
-  top: auto;
-  bottom: 100%;
+.ui.pointing.upward.dropdown .menu,
+.ui.top.pointing.upward.dropdown .menu {
+  top: auto !important;
+  bottom: 100% !important;
   margin: 0em 0em 0.78571429rem;
   border-radius: 0.28571429rem;
 }
 
-.ui.upward.pointing.dropdown > .menu:after,
-.ui.upward.top.pointing.dropdown > .menu:after {
-  top: 100%;
-  bottom: auto;
-  box-shadow: 1px 1px 0px 1px rgba(34, 36, 38, 0.15);
+.ui.pointing.upward.dropdown .menu:after,
+.ui.top.pointing.upward.dropdown .menu:after {
+  top: 100% !important;
+  bottom: auto !important;
+  box-shadow: 1px 1px 0px 0px rgba(34, 36, 38, 0.15);
   margin: -0.25em 0em 0em;
+}
+
+/* Right Pointing Upward */
+
+.ui.right.pointing.upward.dropdown:not(.top):not(.bottom) .menu {
+  top: auto !important;
+  bottom: 0 !important;
+  margin: 0em 1em 0em 0em;
+}
+
+.ui.right.pointing.upward.dropdown:not(.top):not(.bottom) .menu:after {
+  top: auto !important;
+  bottom: 0 !important;
+  margin: 0em 0em 1em 0em;
+  box-shadow: -1px -1px 0px 0px rgba(34, 36, 38, 0.15);
+}
+
+/* Left Pointing Upward */
+
+.ui.left.pointing.upward.dropdown:not(.top):not(.bottom) .menu {
+  top: auto !important;
+  bottom: 0 !important;
+  margin: 0em 0em 0em 1em;
+}
+
+.ui.left.pointing.upward.dropdown:not(.top):not(.bottom) .menu:after {
+  top: auto !important;
+  bottom: 0 !important;
+  margin: 0em 0em 1em 0em;
+  box-shadow: -1px -1px 0px 0px rgba(34, 36, 38, 0.15);
 }
 
 /*******************************
@@ -30381,7 +30819,7 @@ select.ui.dropdown {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Video
+ * # Semantic UI 2.2.12 - Video
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -30546,7 +30984,7 @@ select.ui.dropdown {
   padding-bottom: 42.85714286%;
 }
 /*!
- * # Semantic UI 2.2.7 - Modal
+ * # Semantic UI 2.2.12 - Modal
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -30633,7 +31071,7 @@ select.ui.dropdown {
 
 .ui.modal > .header:not(.ui) {
   font-size: 1.42857143rem;
-  line-height: 1.2857em;
+  line-height: 1.28571429em;
   font-weight: bold;
 }
 
@@ -30911,6 +31349,12 @@ select.ui.dropdown {
              States
 *******************************/
 
+.ui.loading.modal {
+  display: block;
+  visibility: hidden;
+  z-index: -1;
+}
+
 .ui.active.modal {
   display: block;
 }
@@ -30973,6 +31417,13 @@ select.ui.dropdown {
   }
 }
 
+/* Scrolling Content */
+
+.ui.modal .scrolling.content {
+  max-height: calc(70vh);
+  overflow: auto;
+}
+
 /*--------------
    Full Screen
 ---------------*/
@@ -31003,6 +31454,92 @@ select.ui.dropdown {
 
 .ui.modal {
   font-size: 1rem;
+}
+
+/* Mini */
+
+.ui.mini.modal > .header:not(.ui) {
+  font-size: 1.3em;
+}
+
+/* Mini Modal Width */
+
+@media only screen and (max-width: 767px) {
+  .ui.mini.modal {
+    width: 95%;
+    margin: 0em 0em 0em -47.5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.mini.modal {
+    width: 35.2%;
+    margin: 0em 0em 0em -17.6%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .ui.mini.modal {
+    width: 340px;
+    margin: 0em 0em 0em -170px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .ui.mini.modal {
+    width: 360px;
+    margin: 0em 0em 0em -180px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .ui.mini.modal {
+    width: 380px;
+    margin: 0em 0em 0em -190px;
+  }
+}
+
+/* mini */
+
+.ui.small.modal > .header:not(.ui) {
+  font-size: 1.3em;
+}
+
+/* Tiny Modal Width */
+
+@media only screen and (max-width: 767px) {
+  .ui.tiny.modal {
+    width: 95%;
+    margin: 0em 0em 0em -47.5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.tiny.modal {
+    width: 52.8%;
+    margin: 0em 0em 0em -26.4%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .ui.tiny.modal {
+    width: 510px;
+    margin: 0em 0em 0em -255px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .ui.tiny.modal {
+    width: 540px;
+    margin: 0em 0em 0em -270px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .ui.tiny.modal {
+    width: 570px;
+    margin: 0em 0em 0em -285px;
+  }
 }
 
 /* Small */
@@ -31097,7 +31634,7 @@ select.ui.dropdown {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Nag
+ * # Semantic UI 2.2.12 - Nag
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -31242,7 +31779,7 @@ a.ui.nag {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Popup
+ * # Semantic UI 2.2.12 - Popup
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -32053,7 +32590,7 @@ a.ui.nag {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Progress Bar
+ * # Semantic UI 2.2.12 - Progress Bar
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -32634,7 +33171,7 @@ a.ui.nag {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Rating
+ * # Semantic UI 2.2.12 - Rating
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -32911,7 +33448,7 @@ a.ui.nag {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Search
+ * # Semantic UI 2.2.12 - Search
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -32936,8 +33473,8 @@ a.ui.nag {
   text-shadow: none;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.2142em;
-  padding: 0.67861429em 1em;
+  line-height: 1.21428571em;
+  padding: 0.67857143em 1em;
   font-size: 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -33033,7 +33570,7 @@ a.ui.nag {
 }
 
 .ui.search > .results .result .title {
-  margin: -0.14285em 0em 0em;
+  margin: -0.14285714em 0em 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
@@ -33345,7 +33882,7 @@ a.ui.nag {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Shape
+ * # Semantic UI 2.2.12 - Shape
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -33504,7 +34041,7 @@ a.ui.nag {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Sidebar
+ * # Semantic UI 2.2.12 - Sidebar
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -33766,21 +34303,6 @@ body.pushable > .pusher {
 /*--------------
        iOS
 ---------------*/
-
-/*
-  iOS incorrectly sizes document when content
-  is presented outside of view with 2Dtranslate
-*/
-
-html.ios {
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
-html.ios,
-html.ios body {
-  height: initial !important;
-}
 
 /*******************************
           Variations
@@ -34202,7 +34724,7 @@ html.ios body {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Sticky
+ * # Semantic UI 2.2.12 - Sticky
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -34276,7 +34798,7 @@ html.ios body {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Tab
+ * # Semantic UI 2.2.12 - Tab
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -34363,7 +34885,7 @@ html.ios body {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.7 - Transition
+ * # Semantic UI 2.2.12 - Transition
  * http://github.com/semantic-org/semantic-ui/
  *
  *
