@@ -5,9 +5,24 @@
     "license": "MIT",
     "version": "1.3.0",
     "type": "library",
+    "require": {
+        "laravel/framework": ">=5.5 <6.0"
+    },
     "provide": {
-	    "semantic/ui-css": "2.2.13",
-	    "jquery/jquery": "3.2.1"
-    }
+  	    "semantic/ui-css": "2.2.13",
+  	    "jquery/jquery": "3.2.1"
+    },
+  	"autoload": {
+    		"psr-4": {
+    			   "Wangaz\\SUI\\": "src/Wangaz/SUI"
+    		}
+  	},
+    "extra": {
+    		"laravel":  {
+      			"providers": [
+      					"Wangza\\SUI\\LaravelSuiCssServiceProvider"
+      			]
+    		}
+  	}
 }
 
