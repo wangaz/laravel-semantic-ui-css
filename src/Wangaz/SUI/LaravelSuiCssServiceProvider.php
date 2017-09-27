@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Wangaz\SUI;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -15,7 +15,7 @@ class LaravelSuiCssServiceProvider extends ServiceProvider
     {
         // publish assets
         $this->publishes([
-            __DIR__.'/src/assets' => public_path()
+            __DIR__.'/src/assets' => public_path('vendor/laravel-semantic-ui-css')
         ], "assets");
     }
 
