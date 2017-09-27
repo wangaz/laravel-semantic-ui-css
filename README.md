@@ -19,3 +19,11 @@ Run `composer update` via CLI
 
 3. In all other cases run `php artisan vendor:publish --provider="Wangaz\SUI\LaravelSuiCssServiceProvider" --force` in your CLI, if you want to updated jQuery and Semantic UI.
 
+## Use
+Both packages are available in the `vendor/laravel-semantic-ui-css/` folder.
+
+  environment | jQuery | Semantic UI
+----|--------|-------------
+productive | `jquery/jquery.min.js` | `semantic-ui/semantic.min.css` and `semantic-ui/semantic.min.js`
+development | `jquery/jquery.js` | `semantic-ui/semantic.css` and `semantic-ui/semantic.js`
+
