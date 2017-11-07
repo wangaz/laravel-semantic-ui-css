@@ -20,7 +20,7 @@
     "extra": {
     		"laravel":  {
       			"providers": [
-      					"Wangza\\SUI\\LaravelSuiCssServiceProvider"
+      					"Wangaz\\SUI\\LaravelSuiCssServiceProvider"
       			]
     		}
   	}
