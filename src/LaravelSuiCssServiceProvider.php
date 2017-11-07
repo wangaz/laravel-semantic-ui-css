@@ -15,7 +15,7 @@ class LaravelSuiCssServiceProvider extends ServiceProvider
     {
         // publish assets
         $this->publishes([
-            __DIR__.'/src/assets' => public_path('vendor/laravel-semantic-ui-css')
+            __DIR__.'/assets' => public_path('vendor/laravel-semantic-ui-css')
         ], "assets");
     }
 
